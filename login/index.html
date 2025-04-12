@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="h-[100vh] bg-gray-300 flex justify-center items-center">
+    
+    <div class="w-[65%] sm:w-[35%] h-[68vh] rounded-lg bg-white shadow-lg">
+
+        <h1 class="font-bold text-center text-2xl sm:text-3xl mt-6"><i>LOG IN</i></h1>
+
+        <div class="grid grid-cols-1 grid-rows-4 gap-4 mt-8 p-6">
+
+            <label for="email">
+                <input type="text" id="email" placeholder="Enter Your Email" class="w-full p-2 rounded-sm border-2 border-gray-300 focus:border-blue-600">
+            </label>
+            <label for="password">
+                <input type="text" id="password" placeholder="Enter Your Password" class="w-full p-2 rounded-sm border-2 border-gray-300 focus:border-blue-600">
+            </label>
+               
+            <button id="button" class="bg-[#191970] p-2 px-8 rounded-sm text-white text-sm md:text-xl font-semibold hover:bg-sky-700 mt-2">Log In</button>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script type="module" src="login.js"></script>
+</body>
+</html>

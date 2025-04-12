@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>myweb</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <nav class="bg-white shadow-md">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 p-4">
+        <div class="flex justify-between h-16 items-center">
+          <div
+            class="text-2xl font-bold text-purple-600 hover:text-pink-800 italic"
+          >
+            <i class="fa-brands fa-pied-piper"></i>KiranSyed
+          </div>
+
+          <div class="hidden md:flex space-x-4">
+            <a href="/login/index.html"
+              ><button
+                class="px-4 py-2 text-[#191970] font-medium hover:text-blue-800"
+              >
+                Login
+              </button></a
+            >
+            <a href="/authentication/index.html"
+              ><button
+                class="px-4 py-2 bg-[#191970] text-white rounded hover:bg-blue-700"
+              >
+                Signup
+              </button></a
+            >
+          </div>
+
+          <div class="md:hidden">
+            <button id="btn" class="text-gray-700 focus:outline-none">
+              <i class="fa-solid fa-bars w-6 h-6"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- ============== for mobile phone ============= -->
+      <div
+        id="mobile"
+        class="hidden md:hidden px-4 pb-4 flex flex-col justify-center"
+      >
+        <button
+          class="block w-full text-center px-4 py-2 text-blue-600 hover:text-blue-800"
+        >
+          Login
+        </button>
+        <button
+          class="w-full text-center px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 mt-2"
+        >
+          Signup
+        </button>
+      </div>
+    
+    </nav>
+
+     <!-- ===================== CARDS ==================== -->
+
+     <div class="max-w-3xl mx-auto p-8 bg-white mt-[3%] rounded-md">
+        <!-- Input Fields Section -->
+        <div class="">
+          <label class="block text-lg font-medium text-gray-700">Title</label>
+          <input type="text" id="title" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent" placeholder="Enter your coding career" />
+    
+          <label class="block mt-4 text-lg font-medium text-gray-700">Description</label>
+          <input type="text" id="description" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent" placeholder="Enter design" />
+    
+          <label class="block mt-4 text-lg font-medium text-gray-700">Category</label>
+          <input type="text" id="category" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent" placeholder="Enter category" />
+    
+          <button id="generate-btn" class="mt-4 px-6 py-2 bg-[#191970] text-white font-medium rounded-md hover:bg-blue-700">
+            Generate Cards
+          </button>
+        </div>
+    
+        <!-- ==================== Cards Section =================== -->
+
+        <div id="cards-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- ================ Cards generated  ===================== -->
+        </div>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="header.js"></script>
+  </body>
+</html>
