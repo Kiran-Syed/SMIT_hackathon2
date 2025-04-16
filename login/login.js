@@ -32,7 +32,7 @@ signInWithEmailAndPassword(auth, email, password)
     // Signed in 
     const user = userCredential.user;
     alert("login success")
-    window.location.href="success.html"
+    window.location.href="../index.html"
     // ...
   })
   .catch((error) => {
